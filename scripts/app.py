@@ -52,14 +52,11 @@ if store_name in store_dfs_cumulative.keys():
     plt.xlabel('Date')
     plt.ylabel('Cumulative Review Length')
     plt.grid(True)
-    # ax.tick_params(axis='x', rotation=45)
     plt.xticks(rotation=30)
     st.pyplot(fig)
 else:
     st.text(f"NO SUCH STORE: {store_name}")
 
-target_menu = ['상위 10개',' 상위 10개 + 기타','전체']
-top_menu = st.selectblox('선택해주세요.', target_menu)
 
 
 
